@@ -17,7 +17,7 @@ It made life easier for me as a system-administrator for a company, creating .mo
 git clone https://github.com/TheSinding/Concore.git
 cd Concore
 npm install
-node concore.js
+npm start
 ```
 
 **Profit**

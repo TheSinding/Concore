@@ -1,8 +1,8 @@
 {
-  "name": "mobilegenerator",
+  "name": "concore",
   "version": "1.0.0",
-  "description": "",
-  "main": "gen.js",
+  "description": "An Apple .mobileconfig generator",
+  "main": "concore.js",
   "dependencies": {
     "mobileconfig": "^1.0.0",
     "prompt": "*",
@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node concore.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "TheSinding",
+  "license": "GPL-3.0"
 }
