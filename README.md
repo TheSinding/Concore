@@ -1,10 +1,10 @@
 # Concore
-This is an Apple mobileconfig generator, written in nodejs.
+This is an Apple mobileconfig generator, written in NodeJS.
 
 ### Disclaimer
 I'm using the mobileconfig node module made by @andris9 , thanks dude!
 
-That means its mostly based on his work, and **he should be creditted**.
+That means its mostly based on his work, and **he should be credited**.
 
 I merely took his work and made a node script convenient for **me!**
 
