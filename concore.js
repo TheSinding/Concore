@@ -22,7 +22,7 @@ var schema = {
       required: true
     },
 		fullname: {
-			message: colors.cyan('Use default email name? If no, then enter desired name, eg example.'),
+			message: colors.cyan('Use default email alias? If no, then enter desired alias, eg example.'),
 			required: true,
 			default: 'yes'
 		},
