@@ -21,6 +21,15 @@ cd Concore
 npm install
 npm start
 ```
+BTW you need SHA256 keys inside the keys folder, or the script will fail.
+
+If you would like too use your own HTTPS certificates, then add them to the keysfolder, or change the path when asked..
+
+Else you can generate your own keys and certs.
+
+`openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout keys/key.pem -out keys/cert.pem`
+
+
 
 **Profit**
 
