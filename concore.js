@@ -18,7 +18,7 @@ var schema = {
       required: true	
     },
     email_domain: {
-      message: colors.cyan('Enter email domain, eg example.com:'),
+      message: colors.cyan('Enter email domain, eg example.com'),
       required: true
     },
 		fullname: {
