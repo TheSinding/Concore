@@ -1,0 +1,17 @@
+{
+  "name": "mobilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gen.js",
+  "dependencies": {
+    "mobileconfig": "^1.0.0",
+    "prompt": "*",
+		"colors": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
