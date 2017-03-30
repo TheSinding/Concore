@@ -19,6 +19,7 @@ var schema = {
     },
     email_domain: {
       message: colors.cyan('Enter email domain, eg example.com'),
+			default: 'coworkingplus.dk',
       required: true
     },
 		fullname: {
@@ -34,7 +35,8 @@ var schema = {
     },
     imap: {
       required: true,
-      description: colors.cyan('Enter IMAP host')
+      description: colors.cyan('Enter IMAP host'),
+			default: 'mail16.123hotel.dk'
     },
     imap_port:{
       required: true,
@@ -48,7 +50,8 @@ var schema = {
     },
     smtp: {
       required: true,
-      description: colors.cyan('Enter SMTP host')
+      description: colors.cyan('Enter SMTP host'),
+			default: 'asmtp.curanet.dk'
     },
     smtp_port:{
       required: true,
@@ -88,6 +91,7 @@ prompt.get(schema, function (err, result) {
 			console.log(colors.magenta('Using ' + initials + ' as identifier'));
 			email = initials + '@' +	result.email_domain;
 		} else {
+			initials = result.fullname;
 			console.log(colors.magenta('Using ' + result.fullname + ' as identifier'));
 			email = result.fullname + '@' + result.email_domain;
 		}	
@@ -97,8 +101,8 @@ prompt.get(schema, function (err, result) {
 
     emailAddress: email,
 
-    organization: 'mail.' + initials + '.' + result.email_domail,
-    identifier: 'mail.' + initials + '.' + result.email_domail,
+    organization: 'mail.' + initials + '.' + result.email_domain,
+    identifier: 'mail.' + initials + '.' + result.email_domain,
 
     displayName: email + ' Config',
     displayDescription: 'Install this profile to auto configure your Coworking Plus e-mail account',

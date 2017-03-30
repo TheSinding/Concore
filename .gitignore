@@ -1,5 +1,6 @@
 # Created by https://www.gitignore.io/api/node
 
+
 ### Node ###
 # Logs
 logs
@@ -48,3 +49,9 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
+
+config/*
+!config/readme
+
+keys/*
+!keys/readme
