@@ -50,8 +50,8 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
-config/*
-!config/readme
+configs/*
+!configs/readme
 
 keys/*
 !keys/readme
